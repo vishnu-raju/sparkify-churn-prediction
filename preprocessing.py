@@ -262,7 +262,7 @@ def split_into_train_test_80_20(spark_df):
         spark_df (pyspark.sql.dataframe.DataFrame): The pyspark dataframe to split
 
     Returns:
-        tuple: A tuple of train and test pyspark dataframes
+        tuple: A tuple of train_data, train_users, test_data, test_users pyspark dataframes
     """
     users_marked = mark_users_as_churners(spark_df)
 
@@ -278,10 +278,21 @@ def split_into_train_test_80_20(spark_df):
 
 
 def filter_for_event_and_group_by_userId_and_sessionId(event_name, spark_df):
+    """Filters the dataset based on the event name
+
+    Args:
+        event_name (str): Event name
+        spark_df (pyspark.sql.dataframe.DataFrame): The dataframe to be filtered
+
+    Returns:
+        pyspark.sql.dataframe.DataFrame: The filtered down dataframe
+    """
+
     return spark_df.filter(f'page == "{event_name}"').groupBy("userId", "sessionId")
 
 
 def get_stat_per_session_for_users(event_name, alias_name, spark_df):
+
     return filter_for_event_and_group_by_userId_and_sessionId(event_name, spark_df).count().groupBy(
         "userId").mean().select("userId", Fround(col("avg(count)"), 2).alias(alias_name))
 
@@ -332,11 +343,23 @@ def comparison_summary(event, alias_name, spark_df, users_marked_df, plot=False,
 
 
 def event_count_per_user(event_name, alias_name, spark_df):
+    """Creates a dataframe with counts of each event for each user
+
+    Args:
+        event_name (str): Event name
+        alias_name (str): Alias name for the new column having counts
+        spark_df (pyspark.sql.dataframe.DataFrame): Pyspark dataframe
+
+    Returns:
+        pyspark.sql.dataframe.DataFrame: Pyspark dataframe
+    """
+    
     return spark_df.filter(f"page == '{event_name}'").groupBy('userId').count().select("userId",
                                                                                        col("count").alias(alias_name))
 
 
 def comparison_summary_for_user(event_name, alias_name, spark_df, users_marked_df, plot=False, plot_title=""):
+    
     summary_df = event_count_per_user(event_name, alias_name, spark_df)
 
     if plot:
@@ -399,6 +422,7 @@ def get_number_of_times_each_user_changed_levels(spark_df, users_marked_df, plot
 
 
 def get_user_gender(spark_df):
+
     return spark_df.select("userId", "gender").distinct()
 
 

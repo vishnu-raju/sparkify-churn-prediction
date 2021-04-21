@@ -7,6 +7,8 @@ from pyspark.sql.types import IntegerType
 from pyspark.sql import Window
 from pyspark.sql.functions import sum as Fsum
 from pyspark.sql.functions import round as Fround
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 def import_data_into_dataframe(file_location, file_type,

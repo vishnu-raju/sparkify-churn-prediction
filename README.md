@@ -8,7 +8,7 @@
 
 ### Installation <a name="installation"></a>
 
-This project was carried out locally using the <a href="https://hub.docker.com/r/jupyter/pyspark-notebook">pyspark docker image</a>. Plotly==4.14.3 is the only additional package that was installed on top of the existing libraries that come installed in the docker image.
+This project was carried out locally using the <a href="https://hub.docker.com/r/jupyter/pyspark-notebook">pyspark docker image</a>. Plotly==4.14.3 is the only additional package that was installed on top of the existing libraries that come as part of the docker image.
 The code should run without issues using Python 3.*
 
 Before completely this project locally, I initially started on IBM Cloud free tier. However, I soon consumed my monthly quota. But the code should be able to run without issue on IBM cloud.
@@ -44,4 +44,5 @@ In Part 2, we use the data create from Part 1 to modelling. Using the train and 
     utility_functions.py : A python module having functions used by both notebooks
 
 ### Licensing, Authors, Acknowledgements<a name="licensing"></a>
-This project was done as part of the Udacity Data Scientist Nanodegree. The licensing information is detailed in the LICENSE file
+This project was done as part of the Udacity Data Scientist Nanodegree. The Sparkify data was provided by Udacity and its partner Insight Data Science.
+The licensing information is detailed in the LICENSE file

@@ -624,3 +624,16 @@ def aggregate_features(spark_df, users_marked_df, enable_plot=False):
     final = final.fillna(0)  # filling all null with 0
 
     return final
+
+
+def print_data_summary(train_data, test_data):
+    train_users =  mark_users_as_churners(train_data)
+    test_users = mark_users_as_churners(test_data)
+    train_info = train_users.groupBy("churned").count().toPandas()
+    test_info = test_users.groupBy("churned").count().toPandas()
+    print(f"There are {len(train_data.columns)} columns and {train_data.count()} rows in the train data set")
+    print(f"The train data set has information about {train_data.select('userId').distinct().count()} users")
+    print(f"Out of which {train_info[train_info.churned == 0]['count'][0]} are non churners and {train_info[train_info.churned == 1]['count'][1]} are churners")
+    print(f"There are {len(test_data.columns)} columns and {test_data.count()} rows in the test data set")
+    print(f"The test data set has information about {test_data.select('userId').distinct().count()} users")
+    print(f"Out of which {test_info[test_info.churned == 0]['count'][0]} are non churners and {test_info[test_info.churned == 1]['count'][1]} are churners")

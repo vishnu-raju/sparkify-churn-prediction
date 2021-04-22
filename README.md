@@ -26,10 +26,10 @@ So when a user stops using the service altogether, it is said that the user has 
 In this project, we will try to use the user event logs collected by Sparkify to identify behaviors of users to continue to use the service as opposed to the ones that churned.
 
 #### Part 1: Sparkify_Part_1.ipynb
-    In Part 1 of this project, we perform analysis of user event log dataset for the fictitious Sparkify service. The outcome of this is a train and test dataset containing engineered features.
+In Part 1 of this project, we perform analysis of user event log dataset for the fictitious Sparkify service. The outcome of this is a train and test dataset containing engineered features.
     
 #### Part 2: Sparkify_Part_2.ipynb
-    In Part 2, we use the data create from Part 1 to modelling. Using the train and test data, we attempt to use ML algorithms supported by PySpark to model the data and use it to predict users who are likely to churn in the near future.
+In Part 2, we use the data create from Part 1 to modelling. Using the train and test data, we attempt to use ML algorithms supported by PySpark to model the data and use it to predict users who are likely to churn in the near future.
 
 
 ### File Descriptions <a name="files"></a>

@@ -3,8 +3,9 @@
 ## Table of Contents
 1. [Installation](#installation)
 2. [Project Motivation](#motivation)
-3. [File Descriptions](#files)  
-4. [Licensing, Authors, and Acknowledgements](#licensing)
+3. [File Descriptions](#files)
+4. [Findings and Conclusions](#findings)
+5. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ### Installation <a name="installation"></a>
 
@@ -44,12 +45,13 @@ In Part 2, we use the data create from Part 1 to modelling. Using the train and 
     LICENSE : The license file
     README.md : The readme file
     Sparkify_Part_1.ipynb : The jupyter notebook with the code for Part 1
-    Sparkify_Part_2.ipynb : The jupyter notebook with the code for Part 1
+    Sparkify_Part_2.ipynb : The jupyter notebook with the code for Part 2
     utility_functions.py : A python module having functions used by both notebooks
+    
+### Findings and Conclusions<a name="findings"></a>
+The main findings and conclusions of this project can be found within the Jupyter notebooks as well as on the blog post <a href="https://raju-vishnu.medium.com/predicting-churn-using-user-event-logs-capstone-project-df27fd825009">here</a>. 
 
 ### Licensing, Authors, Acknowledgements<a name="licensing"></a>
 This project was done as part of the Udacity Data Scientist Nanodegree. The Sparkify data was provided by Udacity and its partner Insight Data Science.
-
-A blog post elaborating the process used in this project can be found <a href="https://raju-vishnu.medium.com/predicting-churn-using-user-event-logs-capstone-project-df27fd825009">here</a>
 
 The licensing information is detailed in the LICENSE file

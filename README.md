@@ -16,7 +16,9 @@ Before completely this project locally, I initially started on IBM Cloud free ti
 ### Project Motivation <a name="motivation"></a>
 
 Imagine a fictitious company Sparkify. A music streaming company similar to the likes of Spotify and Pandora. Millions of users listen to their favorite songs and discover new music on Sparkify. 
+
 <img src='images/sparkify.png' alt='sparkify logo'/>
+
 Sparkify collects data of all user interactions. The interactions include playing a song, liking a song, disliking a song, adding a friend, etc. This data is a treasure cove to understand user behavior which can help the company improve the product.
 
 Like all subscription based services, the users of the services are either Paid or Free users. Paid users pay a monthly fee whereas Free users are served ads to drive revenue. Such a business model requires the company to do all they can to retain users on the platform. As long as the user continues to use the service, the company makes revenue either from subscription fees or from advertisements. 

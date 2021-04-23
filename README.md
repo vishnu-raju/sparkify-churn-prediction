@@ -45,5 +45,7 @@ In Part 2, we use the data create from Part 1 to modelling. Using the train and 
 
 ### Licensing, Authors, Acknowledgements<a name="licensing"></a>
 This project was done as part of the Udacity Data Scientist Nanodegree. The Sparkify data was provided by Udacity and its partner Insight Data Science.
+
 A blog post elaborating the process used in this project can be found <a href="https://raju-vishnu.medium.com/predicting-churn-using-user-event-logs-capstone-project-df27fd825009">here</a>
+
 The licensing information is detailed in the LICENSE file

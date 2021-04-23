@@ -17,7 +17,9 @@ Before completely this project locally, I initially started on IBM Cloud free ti
 
 Imagine a fictitious company Sparkify. A music streaming company similar to the likes of Spotify and Pandora. Millions of users listen to their favorite songs and discover new music on Sparkify. 
 
-<img src='images/sparkify.png' alt='sparkify logo'/>
+<p align="center">
+    <img src='images/sparkify.png' alt='sparkify logo'/>
+</p>
 
 Sparkify collects data of all user interactions. The interactions include playing a song, liking a song, disliking a song, adding a friend, etc. This data is a treasure cove to understand user behavior which can help the company improve the product.
 

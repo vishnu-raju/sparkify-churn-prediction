@@ -12,7 +12,7 @@
 This project was carried out locally using the <a href="https://hub.docker.com/r/jupyter/pyspark-notebook">pyspark docker image</a>. Plotly==4.14.3 is the only additional package that was installed on top of the existing libraries that come as part of the docker image.
 The code should run without issues using Python 3.*
 
-Before completely this project locally, I initially started on IBM Cloud free tier. However, I soon consumed my monthly quota. But the code should be able to run without issue on IBM cloud.
+Before completeting this project locally, I initially started on IBM Cloud free tier. However, I soon consumed my monthly quota. But the code should be able to run without issue on IBM cloud.
 
 ### Project Motivation <a name="motivation"></a>
 

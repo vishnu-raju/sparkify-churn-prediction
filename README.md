@@ -41,7 +41,7 @@ In Part 2, we use the data create from Part 1 for modelling. Using the train and
 
     \images
         sparkify.png : The logo of the fictitious Sparkify
-        udacity=logo.ong : Udacity logo
+        udacity-logo.png : Udacity logo
     LICENSE : The license file
     README.md : The readme file
     Sparkify_Part_1.ipynb : The jupyter notebook with the code for Part 1
